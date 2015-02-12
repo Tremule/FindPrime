@@ -36,3 +36,13 @@ def find_next_prime(n):
 print " %r is the next prime number" % (find_next_prime(6))
 print " %r is the next prime number" % (find_next_prime(10))
 print " %r is the next prime number" % (find_next_prime(11))
+
+def test_function(*args):
+    for arg in args:
+        if isinstance(arg, int):
+            if arg % 2 == 0:
+                print "{} is divisible by 2".format(arg)
+            else:
+                pass
+        else:
+            pass
